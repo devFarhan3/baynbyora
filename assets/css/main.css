@@ -2899,9 +2899,8 @@ iframe {
 }
 
 .invalid-feedback {
-  display: block;
+  display: none;
 }
-
 .progress {
   height: 10px;
   margin-bottom: 20px;
