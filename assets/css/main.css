@@ -3063,9 +3063,8 @@ iframe {
 
 @media (min-width: 320px) and (max-width: 376px) {
   .byan_logo {
-    transform: translate(0%, 4rem);
-  }
-
+    transform: translate(0%, 0rem);
+}
   .cardsss {
     transform: translate(0%, 50%);
 }
@@ -3082,8 +3081,18 @@ iframe {
 
 @media (max-width: 640px) {
 
-  .hero {
+  .byan_logo {
+    transform: translate(0%, -3rem);
+}
 
+  #header {
+    display: none !important;
+  }
+
+
+
+  .hero {
+    min-height: 80dvh;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4)), url(https://v.fastcdn.co/u/62e33449/65479396-0-Bayn-by-ORA.webp) repeat 42% 34% / cover;
 }
 
