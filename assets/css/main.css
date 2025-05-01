@@ -3082,6 +3082,11 @@ iframe {
 
 @media (max-width: 640px) {
 
+  .hero {
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4)), url(https://v.fastcdn.co/u/62e33449/65479396-0-Bayn-by-ORA.webp) repeat 42% 34% / cover;
+}
+
   .main {
     margin: 3px 5px;
   }
