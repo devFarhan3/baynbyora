@@ -90,57 +90,7 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
 
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Global Header
@@ -277,7 +227,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: #fff;;
   }
 
   .navmenu .dropdown ul {
@@ -844,9 +794,9 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   position: relative;
-  padding: 80px 0 60px 0;
+  /* padding: 80px 0 60px 0; */
   display: flex;
   align-items: center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4)), url(https://v.fastcdn.co/u/62e33449/65479396-0-Bayn-by-ORA.webp) top center no-repeat;
@@ -854,10 +804,10 @@ section,
 }
 
 .hero h1 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
+  font-weight: 500;
+  font-size: clamp(1.6099rem, 5vw, 2.3529rem);
+  line-height: clamp(2.25rem, 5vw, 3.8125rem);
+  margin-bottom: 15px;
 }
 
 .hero p {
@@ -2851,12 +2801,10 @@ p,
 }
 
 iframe {
-  width: 810px;
-  height: 445px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  height: 37.25vw;
+  max-width: 100%;
+  max-height: calc(100vw * 9 / 16);
 }
 
 /* Example 2: Centered Border with Custom Width */
@@ -2884,10 +2832,9 @@ iframe {
 }
 
 .am_icons svg {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
 }
-
 
 
 .form-step {
@@ -2902,10 +2849,9 @@ iframe {
   display: none;
 }
 .progress {
-  height: 10px;
-  margin-bottom: 20px;
+  height: 5px;
+  margin-bottom: 15px;
 }
-
 
 
 .btn_general {
@@ -2955,15 +2901,16 @@ iframe {
 }
 
 #contact {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5)), url(https://v.fastcdn.co/u/62e33449/65479407-0-ZenzetaVec21090-gene.png) top center repeat;
-  background-size: cover;
+  /* background: linear-gradient(0deg, rgba(255, 255, 255, 0.5)), url(https://v.fastcdn.co/u/62e33449/65479407-0-ZenzetaVec21090-gene.png) top center repeat;
+  background-size: cover; */
+  background: url(https://v.fastcdn.co/cdn-cgi/image/format=auto,fit=scale-down,sharpen=1/u/a43967b2/65310459-0-Luxury-Marble-Backgr.jpg) repeat 50% 50% / cover;
 }
 
 .progress_form {
   box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0);
   padding: 40px 20px;
   border-radius: 16px;
-  background: rgb(255 255 255 / 40%);
+  background: rgb(255 255 255 / 70%);
 }
 
 
@@ -3049,7 +2996,7 @@ iframe {
   .card-column {
     width: 100%;
     max-width: 300px;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     text-align: center;
   }
 
@@ -3058,6 +3005,53 @@ iframe {
   }
 }
 
+.cardsss h6 {
+  line-height: 1.75rem;
+    font-size: 1.2384rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.cardsss  {
+  transform: translate(0%, 60%);
+}
+
+.cardsss p {
+  line-height: 1.25rem !important;
+  font-size: 0.8895rem !important;
+}
+
+
+#form1 h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.error {
+  margin-top: .25rem;
+    font-size: .875em;
+    color: var(--bs-form-invalid-color);
+}
+
+.orange{
+  color:#C4844F;
+}
+
+
+.swal2-confirm  {
+  border: 0;
+  border-radius: .25em;
+  background: initial;
+  background-color: #C4844F;
+  color: #fff;
+  font-size: 1em;
+  width: 120px;
+}
+
+.swal2-title {
+
+}
 
 /* media queries farhan */
 
