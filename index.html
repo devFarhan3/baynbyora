@@ -887,9 +887,6 @@
 
       $(function () {
 
-
-   
-
         $('input[name="phone"]').intlTelInput();
 
         $.validator.addMethod(
@@ -912,6 +909,7 @@
               required: true,
               email: true
             },
+            
             phone: {
               required: true,
               mobileValidation: $("#phone").val(),
