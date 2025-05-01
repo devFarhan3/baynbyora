@@ -3081,6 +3081,10 @@ iframe {
 
 
 @media (max-width: 640px) {
+
+  .main {
+    margin: 3px 5px;
+  }
   iframe {
     height: 14.0625rem;
     width: 30.375rem;
