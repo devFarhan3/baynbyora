@@ -227,7 +227,8 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: #fff;;
+    color: #fff;
+    ;
   }
 
   .navmenu .dropdown ul {
@@ -2848,6 +2849,7 @@ iframe {
 .invalid-feedback {
   display: none;
 }
+
 .progress {
   height: 5px;
   margin-bottom: 15px;
@@ -3007,13 +3009,13 @@ iframe {
 
 .cardsss h6 {
   line-height: 1.75rem;
-    font-size: 1.2384rem;
-    color: #fff;
-    font-weight: bold;
+  font-size: 1.2384rem;
+  color: #fff;
+  font-weight: bold;
 }
 
 
-.cardsss  {
+.cardsss {
   transform: translate(0%, 60%);
 }
 
@@ -3030,16 +3032,16 @@ iframe {
 
 .error {
   margin-top: .25rem;
-    font-size: .875em;
-    color: var(--bs-form-invalid-color);
+  font-size: .875em;
+  color: var(--bs-form-invalid-color);
 }
 
-.orange{
-  color:#C4844F;
+.orange {
+  color: #C4844F;
 }
 
 
-.swal2-confirm  {
+.swal2-confirm {
   border: 0;
   border-radius: .25em;
   background: initial;
@@ -3049,11 +3051,33 @@ iframe {
   width: 120px;
 }
 
-.swal2-title {
 
-}
 
 /* media queries farhan */
+
+/* @media screen and (max-width: 374px) {
+  .byan_logo {
+    transform: translate(0%, 4rem);
+  }
+} */
+
+@media (min-width: 320px) and (max-width: 376px) {
+  .byan_logo {
+    transform: translate(0%, 4rem);
+  }
+
+  .cardsss {
+    transform: translate(0%, 50%);
+}
+
+  .mobil_resp {
+    transform: translate(0%, 8rem) !important;
+  }
+
+  .byan_text {
+    transform: translate(0%, 30%);
+}
+}
 
 
 @media (max-width: 640px) {
@@ -3062,7 +3086,7 @@ iframe {
     width: 30.375rem;
   }
 
-  .about  , .values  , .location  {
+  .about, .values, .location {
     padding-bottom: 0px;
   }
 
