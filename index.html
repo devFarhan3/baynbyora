@@ -116,7 +116,8 @@
               <img src="https://v.fastcdn.co/u/62e33449/65479387-0-noroot.png.webp" class="img-fluid  " alt=""
                 style="width: 150px; margin: 0 auto;">
             </div>
-            <h1 data-aos="fade-up" class="text-white d-lg-none d-sm-block d-block mb-4 mobil_resp">Bayn by ORA at Ghantoot</h1>
+            <h1 data-aos="fade-up" class="text-white d-lg-none d-sm-block d-block mb-4 mobil_resp">Bayn by ORA at
+              Ghantoot</h1>
             <div class="d-lg-none d-sm-block d-block">
 
 
@@ -171,7 +172,8 @@
 
           <!-- Section Title -->
           <div class="container section-title" data-aos="fade-up">
-            <p><span class="gray">About Bayn – </span> <span class="orange">A Signature Project by ORA Developers</span></p>
+            <p><span class="gray">About Bayn – </span> <span class="orange">A Signature Project by ORA Developers</span>
+            </p>
           </div>
 
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
@@ -195,13 +197,15 @@
           </div>
 
 
-          <div class="col-lg-10 col-sm-12 col-12 text-center d-flex align-items-center mx-auto" data-aos="zoom-out" data-aos-delay="200">
-              <div class="video-container">
-                <iframe data-src="https://www.youtube.com/embed/Fgj-zzj_wHw?showinfo=0&amp;wmode=transparent&amp;rel=0&amp;autoplay=1&amp;mute=1&amp;controls=1"
+          <div class="col-lg-10 col-sm-12 col-12 text-center d-flex align-items-center mx-auto" data-aos="zoom-out"
+            data-aos-delay="200">
+            <div class="video-container">
+              <iframe
+                data-src="https://www.youtube.com/embed/Fgj-zzj_wHw?showinfo=0&amp;wmode=transparent&amp;rel=0&amp;autoplay=1&amp;mute=1&amp;controls=1"
                 allow="autoplay" allowfullscreen="" data-at="video-youtube" title="ORA Bayn" frameborder="0"
                 referrerpolicy="strict-origin-when-cross-origin"
                 src="https://www.youtube.com/embed/Fgj-zzj_wHw?showinfo=0&amp;wmode=transparent&amp;rel=0&amp;autoplay=1&amp;mute=1&amp;controls=1">></iframe>
-              </div>
+            </div>
           </div>
 
         </div>
@@ -613,7 +617,7 @@
                       </label>
                     </div>
                     <div class="invalid-feedback">
-                      Please select a property type.
+                      What types of property are you interested in? is required.
                     </div>
                   </div>
                   <button type="button" class="btn_general next-step" data-next="step2">Next</button>
@@ -624,29 +628,29 @@
                   <h3 class="mb-4">Which details would you like to get?</h3>
                   <div class="mb-3">
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" name="details" id="brochure" value="Brochure">
+                      <input class="form-check-input" type="checkbox" name="details" id="brochure" value="Brochure" required>
                       <label class="form-check-label" for="brochure">
                         Brochure
                       </label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="details" id="units"
-                        value="Available Unit & Prices">
+                        value="Available Unit & Prices" required>
                       <label class="form-check-label" for="units">
                         Available Unit & Prices
                       </label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="details" id="floorPlans"
-                        value="Floor Plans">
+                        value="Floor Plans" required>
                       <label class="form-check-label" for="floorPlans">
                         Floor Plans
                       </label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" name="details" id="paymentPlan"
-                        value="Payment Plan">
-                      <label class="form-check-label" for="paymentPlan">
+                        value="Payment Plan" required>
+                      <label class="form-check-label" for="paymentPlan" >
                         Payment Plan
                       </label>
                     </div>
@@ -695,21 +699,21 @@
                   <h3 class="mb-4">Contact Information</h3>
                   <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Name">
                     <div class="invalid-feedback">
                       Please provide your name.
                     </div>
                   </div>
                   <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Email">
                     <div class="invalid-feedback">
                       Please provide a valid email.
                     </div>
                   </div>
                   <div class="mb-3">
-                    <label for="phone" class="form-label">Phone</label>
-                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                    <label for="phone" class="form-label">Phone number *</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" required placeholder="50 123 4567">
                     <div class="invalid-feedback">
                       Please provide your phone number.
                     </div>
@@ -730,8 +734,6 @@
   </main>
 
   <footer id="footer" class="footer">
-
-
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">McCone Properties.</strong> <span>All Rights
           Reserved</span></p>
@@ -740,9 +742,7 @@
         their products. All transactions are conducted in accordance with the terms and conditions set forth by the
         developer.
       </small>
-
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
@@ -831,6 +831,7 @@
         if (requiredRadios.length > 0) {
           const radioGroup = requiredRadios[0].name;
           const checkedRadio = step.querySelector(`input[name="${radioGroup}"]:checked`);
+          
           if (!checkedRadio) {
             step.querySelector('.invalid-feedback').style.display = 'block';
             isValid = false;
@@ -850,6 +851,7 @@
             step.querySelector('.invalid-feedback').style.display = 'none';
           }
         }
+
 
         // Check required text inputs
         const requiredInputs = step.querySelectorAll('input[type="text"][required], input[type="email"][required], input[type="tel"][required]');
@@ -884,6 +886,10 @@
 
 
       $(function () {
+
+
+   
+
         $('input[name="phone"]').intlTelInput();
 
         $.validator.addMethod(
@@ -895,6 +901,7 @@
         );
 
         $("#form1").validate({
+          
           rules: {
             propertyType: "required",
             details: "required",
@@ -913,7 +920,7 @@
 
           },
           messages: {
-            propertyType: "Please select a property type.",
+            propertyType: "What types of property are you interested in? is required",
             details: " Please select at least one option.",
             contactMethod: "Please select at least one option",
             name: "Please enter your Name",
@@ -968,6 +975,8 @@
 
 
   </script>
+
+
 
 
 

@@ -3053,13 +3053,16 @@ iframe {
 
 
 
-/* media queries farhan */
+#step4  .form-control , .intl-tel-input input{
+  color: #000000;
+  background-color: #FFFFFF;
+  border-color: #BDBDBD;
+  border: 1px solid #BDBDBD;
+}
 
-/* @media screen and (max-width: 374px) {
-  .byan_logo {
-    transform: translate(0%, 4rem);
-  }
-} */
+.form-control:focus {
+  box-shadow:unset !important
+}
 
 @media (min-width: 320px) and (max-width: 376px) {
   .byan_logo {
