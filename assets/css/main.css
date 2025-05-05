@@ -3105,6 +3105,17 @@ iframe {
 
 
 @media (max-width: 640px) {
+
+  .hero p {
+    margin-bottom: 20px;
+}
+  .damac_imgs img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
   .gallery {
     padding-bottom: 0px;
   }
