@@ -2837,6 +2837,7 @@ iframe {
   padding-bottom: 10px;
   font-size: clamp(1.8576rem, 5vw, 2.3529rem);
   line-height: clamp(2.25rem, 5vw, 2.875rem);
+  text-transform: uppercase;
 }
 
 .centered-border::after {
@@ -3106,6 +3107,12 @@ iframe {
 
 @media (max-width: 640px) {
 
+  .about .content p {
+    margin: 0px 0 20px 0;
+    line-height: 24px;
+    text-align: center;
+}
+
   .hero p {
     margin-bottom: 20px;
 }
@@ -3140,7 +3147,7 @@ iframe {
 
   .hero {
     min-height: 80dvh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4)), url(https://v.fastcdn.co/u/62e33449/65479396-0-Bayn-by-ORA.webp) repeat 42% 34% / cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4)), url(../img/banner.jpg) repeat 42% 34% / cover;
 }
 
   .main {
